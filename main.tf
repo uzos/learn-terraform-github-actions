@@ -11,13 +11,15 @@ terraform {
   }
   required_version = "~> 1.0"
 
-  backend "remote" {
-   organization = "UX_HCP"
+  cloud {
+    organization = "UX_HCP"
 
     workspaces {
+      # name = "aws-static-site"
       name = "demo-github-actions"
     }
   }
+
 }
 
 
