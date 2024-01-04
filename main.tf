@@ -15,7 +15,7 @@ terraform {
    organization = "UX_HCP"
 
     workspaces {
-      name = "github-action-terraform"
+      name = "demo-github-actions"
     }
   }
 }
