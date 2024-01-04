@@ -58,7 +58,7 @@ jobs:
 
             </details>
 
-            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`, Destination branch: \`${{ github.ref }}\`*`;
 
             github.issues.createComment({
               issue_number: context.issue.number,
